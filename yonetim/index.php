@@ -1,5 +1,21 @@
 <?php
+session_start();
 include("ayarlar.php");
+if (empty($_SESSION["oturum"]))
+    header("Location:$baseurl/login.php");
+
+
+echo $_SESSION["oturum"];
+//session_destroy("deger");
+
+// login sayfasına gelir..
+// kullanıcı adı ve parola girilir
+// ve post ile kontrol.php sayfasına gider
+// burada kullanıcı ve parola kontrol edilir eğer doğru ise
+// sessin oluşturlarak yetkilendirme verilir ve index.php gider
+// eğer doğru değil ise tekrar login.php gelir.
+
+//unset($_SESSION["deger"]);
 ?>
 <!DOCTYPE html>
 <html>

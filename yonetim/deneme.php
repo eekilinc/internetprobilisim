@@ -8,10 +8,6 @@ if (isset($_POST['eposta']) && isset($_POST["parola"]))
 }
 
 
-
-
-
-
 ?>
 
 

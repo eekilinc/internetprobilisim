@@ -1,3 +1,3 @@
 <?php
-$baseurl="http://localhost/phpders/internetprobilisim/yonetim";
+$baseurl="http://localhost:8000/yonetim";
 
