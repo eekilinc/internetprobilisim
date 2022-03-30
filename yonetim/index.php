@@ -1,11 +1,13 @@
 <?php
 session_start();
 include("ayarlar.php");
+require('helper/database.php');
+
 if (empty($_SESSION["oturum"]))
     header("Location:$baseurl/login.php");
 
 
-echo $_SESSION["oturum"];
+
 //session_destroy("deger");
 
 // login sayfasına gelir..
@@ -39,7 +41,7 @@ echo $_SESSION["oturum"];
                                                                 role="button" href="#"><i
                             class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
                 </div>
-bu sayfa anasayfa
+
             </div>
         </div>
         <!--  footer.php -->

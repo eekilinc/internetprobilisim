@@ -5,6 +5,7 @@ $user="ekrem@mail.net";
 $pass="123456";
 
 if($_POST['email']==$user && $_POST["password"]==$pass)
+   //PDO
 {
     $_SESSION['oturum']="ekrem kılınç";
     header("Location:index.php");
